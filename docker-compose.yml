@@ -1,0 +1,10 @@
+services:
+  ir-system:
+    build: .
+    ports:
+      - "5002:5002"
+    volumes:
+      - index-cache:/app/index_cache
+
+volumes:
+  index-cache:
